@@ -1,0 +1,120 @@
+@font-face {
+    font-family: android;
+    src: url('arquivos/fontes/idroid.otf') format('opentype');
+}
+:root {
+    --fonte-title: 'android', sans-serif;
+    --fonte-comum: arial, verdana, sans-serif;
+    --cor-1: #F2AE30;
+    --cor-2: #F2C12E;
+    --cor-3: #593E25;
+    --cor-4: #A1A2A6;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--cor-4);
+}
+header {
+    background: linear-gradient(to bottom, var(--cor-1), var(--cor-2)5%);
+    height: 15vh;
+}
+header > h1{
+    font: normal bold 2.1em var(--fonte-comum);
+    padding-top: 1em;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.473);
+}
+header > p{
+    padding-top: 0.5em;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+nav ul{
+    background-color: var(--cor-2);
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+}
+nav a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: white;
+    font: normal bold 16px var(--fonte-comum);
+}
+nav a:hover{
+    background: linear-gradient(to right,var(--cor-3)5%, var(--cor-2));
+    text-decoration: underline;
+}
+main {
+    background-color: white;
+    margin: auto;
+    max-width: 800px;
+    min-width: 320px;
+    padding: 2em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
+}
+main p{
+    font: normal normal 1em var(--fonte-comum);
+    text-indent: 1em;
+    line-height: 2.2em;
+}
+h1#principal {
+    font: normal bold 2em var(--fonte-title);
+    color: var(--cor-3);
+    margin-bottom: 16px;
+}
+h2.titulos {
+    font: normal bold 1.7em var(--fonte-title);
+    background: linear-gradient(to right, var(--cor-2), transparent 80%);
+    color: var(--cor-3);
+    padding-left: 8px;
+    margin: 16px 0px;
+}
+#dandroids {
+    width: 100%;
+    margin: 1em 0em;
+}
+#bugdroid {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+#irina {
+    width: 100%;
+    margin: 1em 0em;
+}
+div {
+    background-color: var(--cor-1);
+    margin: 3em -2em;
+    padding-bottom: 61%;
+    position: relative;
+}
+div > iframe{
+    position: absolute;
+    top: 5%;;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+footer {
+    height: 3vh;
+    width: 100%;
+    background-color: var(--cor-3);
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 1.2em;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor-4);
+}
