@@ -9,6 +9,7 @@
     --cor-2: #F2C12E;
     --cor-3: #593E25;
     --cor-4: #A1A2A6;
+    font-size: 100%;
 }
 * {
     margin: 0;
@@ -54,13 +55,13 @@ nav a:hover{
 main {
     background-color: white;
     margin: auto;
-    max-width: 800px;
-    min-width: 320px;
+    max-width: 90vw;
+    min-width: 50vw;
     padding: 2em;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
 }
 main p{
-    font: normal normal 1.5em var(--fonte-comum);
+    font: normal normal 1.5rem var(--fonte-comum);
     text-indent: 1em;
     line-height: 2.2em;
 }
