@@ -39,6 +39,7 @@ nav ul{
     list-style-type: none;
     display: flex;
     gap: 8px;
+    padding-bottom: 0.85em;
 }
 nav a {
     margin-left: 16px;
@@ -47,8 +48,8 @@ nav a {
     font: normal bold 16px var(--fonte-comum);
 }
 nav a:hover{
-    background: linear-gradient(to right,var(--cor-3)5%, var(--cor-2));
-    text-decoration: underline;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
 }
 main {
     background-color: white;
@@ -59,7 +60,7 @@ main {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
 }
 main p{
-    font: normal normal 1em var(--fonte-comum);
+    font: normal normal 1.5em var(--fonte-comum);
     text-indent: 1em;
     line-height: 2.2em;
 }
@@ -101,14 +102,38 @@ div > iframe{
     height: 90%;
     width: 90%;
 }
+aside {
+    background-color: var(--cor-2);
+    border-radius: 2em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+}
+aside > h3 {
+    background-color: #593E25;
+    border-radius: 1em 1em 0em 0em;
+    height: 6vh;
+    color: white;
+    font-size: 1.9em;
+    padding-left: 1em;
+    padding-top: 0.50em;
+}
+aside p{
+    padding: 1em;
+}
+aside ul{
+    list-style: none;
+    columns: 2;
+    margin-left: 15px;
+    font-size: 1.3em;
+}
 footer {
-    height: 3vh;
+    height: 100%;
     width: 100%;
     background-color: var(--cor-3);
     color: white;
     text-align: center;
     padding-top: 13px;
     font-size: 1.2em;
+    padding-bottom: 10px;
 }
 footer a{
     color: white;
